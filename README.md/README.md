@@ -173,3 +173,40 @@ https://www.kaggle.com/olistbr/brazilian-ecommerce
 **Email:** shauryamehta2939@gmail.com
 
 **LinkedIn:** linkedin.com/in/shaurya-mehta-278825227
+
+**11. Why This Project Matters**
+
+This project reflects a realistic end-to-end workflow that many modern e-commerce, logistics, and marketplace companies rely on. Predicting delivery delays is not just an ML exercise—it directly supports customer satisfaction, operational planning, and revenue protection.
+A system like this can help teams:
+* Forecast which orders need priority handling
+* Identify bottlenecks across sellers and regions
+* Improve ETA accuracy
+* Reduce late deliveries through early intervention
+* Align operations, support, and logistics teams around a shared risk score
+The goal of building this was to demonstrate the ability to work across the full analytics stack—data cleaning, SQL transformations, feature engineering, model development, explainability, and dashboard reporting.
+
+**12. Future Improvements**
+
+Some enhancements that can be added to make this an even more production-ready system:
+* Add real geolocation distance (lat/long) for all orders to improve accuracy
+* Deploy the model as an API endpoint (FastAPI or Flask) for real-time scoring
+* Add model monitoring to track drift over time
+* Automate weekly data refresh using Airflow or Prefect
+* Experiment with other models such as CatBoost or LightGBM
+* Integrate a more granular order timeline, including carrier-level data
+* Build seller-level dashboards for SLA performance
+These additions can turn the project from a strong analysis into a fully deployable ML service.
+
+**13. Limitations**
+
+Like any dataset-driven model, there are practical constraints:
+* The Olist dataset does not include real-time carrier events
+* Some addresses lack complete geolocation coordinates
+* Original timestamps may not reflect real operational scenarios
+* A 5k row sample (for GitHub) will not perform as well as the full dataset
+* Delays may also be influenced by external factors (weather, festivals), not captured in the data
+Despite these limitations, the model performs extremely well on the available data.
+
+**14. Acknowledgements**
+
+Special thanks to the creators of the Olist Brazilian E-commerce dataset for making a rich, multi-table dataset publicly available for research and learning.
