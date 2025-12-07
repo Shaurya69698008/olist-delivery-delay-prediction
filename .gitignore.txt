@@ -1,0 +1,13 @@
+# Ignore raw data files
+data/*.csv
+
+# Ignore model checkpoints
+models/*.pkl
+models/*.joblib
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
